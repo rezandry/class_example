@@ -45,11 +45,26 @@ class Mobil:
     def kecepatan_sekarang(self):
         return self.__speed
 
+    def get_nama(self):
+        return self.__nama
+
 mobil_1 = Mobil("Avanza")
-mobil_1.tambah_kecepatan()
-mobil_1.tambah_kecepatan()
-mobil_1.tambah_kecepatan()
-mobil_1.kurangi_kecepatan()
-mobil_1.kurangi_kecepatan()
+mobil_1.tambah_kecepatan() # speed = 5
+mobil_1.tambah_kecepatan() # speed = 10
+mobil_1.tambah_kecepatan() # speed = 15
+mobil_1.kurangi_kecepatan() # speed = 10
+mobil_1.kurangi_kecepatan() # speed = 5
+print(mobil_1.get_nama())
 print(mobil_1.kecepatan_sekarang())
-print(mobil_1.rata_rata())
+print(mobil_1.rata_rata()) # (5+10+15+10+5) / 5 = 9
+
+mobil_2 = Mobil("Terios")
+mobil_2.tambah_kecepatan() # speed = 5
+mobil_2.tambah_kecepatan() # speed = 10
+mobil_2.tambah_kecepatan() # speed = 15
+mobil_2.tambah_kecepatan() # speed = 20
+mobil_2.kurangi_kecepatan() # speed = 15
+mobil_2.kurangi_kecepatan() # speed = 10
+print(mobil_2.get_nama())
+print(mobil_2.kecepatan_sekarang())
+print(mobil_2.rata_rata()) # (5+10+15+20+15+10) / 6 = 12.5
