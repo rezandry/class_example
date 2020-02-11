@@ -6,6 +6,7 @@ Literasi :
 2. https://www.geeksforgeeks.org/constructors-in-python/
 3. https://www.tutorialspoint.com/python3/python_classes_objects.htm
 
+//-----------------------------------------------//
 1. Buat class Pelajar yang menyimpan nama dan umur.
 - class dibuat dengan cara -> pelajar = Pelajar()
 - function yang terdapat pada class tersebut:
